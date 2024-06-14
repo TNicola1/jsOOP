@@ -1,10 +1,10 @@
-import { Book } from "./Book.js"
+import { Document } from "./Document.js"
 
-export class Novel extends Book {
+export class Novel extends Document {
     #genre
 
-    constructor(title, author, genre) {
-        super(title, author)
+    constructor(title, author, availability, genre) {
+        super(title, author, availability)
         this.#genre = genre
     }
 
