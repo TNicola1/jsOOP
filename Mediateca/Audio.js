@@ -1,22 +1,16 @@
-import { Book } from "./Book.js"
+import { Digital } from "./Digital"
 
-export class Audio extends Book {
-    #format
-    #download
+export class Audio extends Digital {
+    format
 
     constructor(title, author, format) {
         super(title, author)
-        this.#format = format
-        this.#download = 0
-    }
+        this.format = format
 
-    download() {
-        this.#download += 1
-        console.log("L'audio è stato scaricato")
     }
 
     showInfo() {
         super.showInfo()
-        console.log(`L'audio è in formato ${this.#format}`)
+        console.log(`L'audio è in formato ${this.format}`)
     }
 }

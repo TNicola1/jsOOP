@@ -1,10 +1,11 @@
 import { Document } from "./Document.js";
 
-export class Digital {
+export class Digital extends Document {
     numDownload
 
     constructor(title, author) {
         super(title, author, true)
+        this.numDownload = 0
     }
 
     rent() {
