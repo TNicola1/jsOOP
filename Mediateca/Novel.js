@@ -11,6 +11,5 @@ export class Novel extends Book {
     showInfo() {
         super.showInfo()
         console.log(`Il genere del libro è ${this.#genre}`)
-        console.log(`Il libro ${this.available ? "è" : "non è"} disponibile`)
     }
 }

@@ -11,6 +11,5 @@ export class Essay extends Book {
     showInfo() {
         super.showInfo()
         console.log(`L'argomento del libro è ${this.#topic}`)
-        console.log(`Il libro ${this.available ? "è" : "non è"} disponibile`)
     }
 }

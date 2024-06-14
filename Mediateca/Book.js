@@ -17,7 +17,7 @@ export class Book {
         this.#author = author
     }
 
-    borrow() {
+    rent() {
         if(!this.#available) {
             console.log(`Il libro "${this.#title}" non è disponibile, lo devi restituire!`)
         } else {
@@ -39,5 +39,6 @@ export class Book {
     showInfo() {
         console.log(`Il titolo del libro è "${this.#title}"`)
         console.log(`L'autore del libro è ${this.#author}`)
+        console.log(`Attualmente ${this.#available ? "è" : "non è"} disponibile`)
     }
 }

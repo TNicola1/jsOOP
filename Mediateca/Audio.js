@@ -10,14 +10,6 @@ export class Audio extends Book {
         this.#download = 0
     }
 
-    borrow() {
-        console.log("Prestito non disponibile")
-    }
-
-    return() {
-        console.log("Restituzione non disponibile")
-    }
-
     download() {
         this.#download += 1
         console.log("L'audio è stato scaricato")

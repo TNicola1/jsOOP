@@ -10,14 +10,6 @@ export class Video extends Book {
         this.#download = 0
     }
 
-    borrow() {
-        console.log("Prestito non disponibile")
-    }
-
-    return() {
-        console.log("Restituzione non disponibile")
-    }
-
     download() {
         this.#download += 1
         console.log("Il video è stato scaricato")

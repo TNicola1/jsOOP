@@ -14,6 +14,5 @@ export class Manual extends Book {
         super.showInfo()
         console.log(`La categoria del libro è ${this.#category}`)
         console.log(`E' la ${this.#edition} edizione`)
-        console.log(`Il libro ${this.available ? "è" : "non è"} disponibile`)
     }
 }
