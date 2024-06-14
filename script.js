@@ -1,7 +1,3 @@
-import { Dirigente } from "./Classi/Dirigente.js";
-import { Impiegato } from "./Classi/Impiegato.js";
-import { Stagista } from "./Classi/Stagista.js";
-
 class Utente {
     nome;
     cognome;
@@ -86,25 +82,3 @@ class Assistente extends Studente {
     }
 }
 
-
-/* Esercizio
-Dipendenti, dirigenti e stagisti
-Dirigenti e dipendenti hanno una tariffa oraria
-Gli stagisti hanno un forfait mensile
-I dirigenti hanno un bonus annuale del 30%
-Scrivere un metodo che calcola lo stipendio mensile di
-dipendenti, dirigenti e stagisti, scrivere un metodo che calcola 
-lo stipendio annuale di ciascuno
-*/
-
-const dirigente = new Dirigente("Mario", "Rossi", "Produzione", 40, 25)
-const impiegato = new Impiegato("Dario", "Barone", 15, dirigente)
-const stagista = new Stagista("Andrea", "Verdi", dirigente, 1000)
-
-let dipendenti = [dirigente, impiegato, stagista]
-
-for(const dipendente of dipendenti) {
-    console.log(dipendente.constructor.name)
-    console.log(`Lo stipendio mensile di ${dipendente.nome} ${dipendente.cognome} ammonta a ${dipendente.calcolareStipendioMensile()}`)
-    console.log(`Lo stipendio annuale di ${dipendente.nome} ${dipendente.cognome} ammonta a ${dipendente.calcolareStipendioAnnuale()}`)
-}
